@@ -12,13 +12,9 @@ from tqdm import tqdm
 import gymnasium as gym
 from gymnasium import spaces
 
-class FailToReachTargetError(RuntimeError):
-    pass
+class ReachRL(gym.Env):
 
-
-class MagneticReach(gym.Env):
-
-    SIMULATION_STEP_DELAY = 1 / 20.
+    SIMULATION_STEP_DELAY = 1 / 50.
 
     def __init__(self,robot,camera=None,vis=False) -> None:
         self.robot = robot
@@ -27,10 +23,10 @@ class MagneticReach(gym.Env):
         self.step_counter = 0
 
         self.height = 0.25
-        self.x_lower_bound = 0.1
-        self.x_higher_bound = 0.25
-        self.y_lower_bound = 0.4
-        self.y_higher_bound = 0.7
+        self.x_lower_bound = 0.2
+        self.x_higher_bound = 0.35
+        self.y_lower_bound = -0.5
+        self.y_higher_bound = 0.5
         self.z_lower_bound = 0.15
         self.z_higher_bound = 0.35
 

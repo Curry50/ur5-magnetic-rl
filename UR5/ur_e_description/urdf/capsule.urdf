@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="capsule">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="1.16997538678892E-20 -5.87578714074268E-20 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00153" />
+      <inertia
+        ixx="5.36034246518758E-06"
+        ixy="-1.05879118406788E-22"
+        ixz="-8.34349030363985E-23"
+        iyy="5.36034246518758E-06"
+        iyz="-1.66133967438731E-23"
+        izz="3.18086256175967E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/capsule.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="../meshes/capsule.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
