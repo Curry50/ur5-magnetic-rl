@@ -110,7 +110,6 @@ def parse_arguments():
     return args
 
         
-
 if __name__ == "__main__":
     args = parse_arguments()
     sim = choose_simulation_type(args)
